@@ -1,5 +1,30 @@
 apply plugin: 'com.android.application'
 
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+    }
+}
+
+allprojects {
+    // *** Add this *** //
+    buildscript {
+        repositories {
+            google()
+            jcenter()
+        }
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "30.0.3"
@@ -8,6 +33,10 @@ android {
         applicationId 'org.jafie.invaders_die_android'
         minSdkVersion 14
         targetSdkVersion 29
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
     }
 
     buildTypes {
@@ -19,7 +48,7 @@ android {
 }
 
 dependencies {
-    compile project(':andEngine')
-    compile project(':andEngineTMXTiledMapExtension')
-    compile project(':andEnginePhysicsBox2DExtension')
+    implementation files('andengine_lib/andEngine-release.aar')
+    implementation files('andengine_lib/andEnginePhysicsBox2DExtension-release.aar')
+    implementation files('andengine_lib/andEngineTMXTiledMapExtension-release.aar')
 }
