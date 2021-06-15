@@ -115,7 +115,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast toast = Toast.makeText(MainActivity.this,
-						"Invaders must die - 2013", Toast.LENGTH_SHORT);
+						"Invaders die - 2013", Toast.LENGTH_SHORT);
 				toast.setGravity(Gravity.START | Gravity.BOTTOM, 0, 0);
 				toast.show();
 				// Toast.makeText(null, SOUND, 5);
