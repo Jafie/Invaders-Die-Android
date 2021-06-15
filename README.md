@@ -1,4 +1,4 @@
-# Invaders-Must-Die-Android
+# Invaders-Die-Android
 A  tower defense developped in Android with AndEngine (created by Nicolas Gramlich).
 
 An old school project that I recompiled with Android Studio. The application works pretty well (except soundtrack).
