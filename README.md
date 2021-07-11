@@ -1,5 +1,5 @@
 # Invaders-Die-Android
-A  tower defense developped in Android with AndEngine (created by Nicolas Gramlich).
+A  tower defense developped in Android with AndEngine (engine maintained by Nicolas Gramlich).
 
 An old school project that I recompiled with Android Studio. The application works pretty well (except soundtrack).
 However, the code looks ugly and a refactoring is needed! :smile:
